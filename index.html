@@ -4,9 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prueba Laboratorio samsung Desarrolladoras Ana Fernández</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <h1>Ei Aqui estou</h1>
+    <h1>Formulario Información Alta Telefónica</h1>
+    <form
+      action=""
+      method="post"
+      class="contactForm"
+      enctype="multipart/form-data"
+    >
+      <fieldset class="fieldSet">
+        <legend>Datos personales</legend>
+        <div class="inputContainer">
+          <label for="firstName">Nombre:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="name"
+            id="firstName"
+            placeholder="Ana"
+            required
+          />
+        </div>
+
+        <div class="inputContainer">
+          <label for="surname">Apellido:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Baneira"
+            required="required"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="direction">Dirección:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="direction"
+            id="direction"
+            placeholder="Rua Mariñeira, 3º A , Arou"
+            required="required"
+          />
+        </div>
+
+        <div class="inputContainer">
+          <label for="CP">Código Postal:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="CP"
+            id="CP"
+            placeholder="15011"
+            required="required"
+            maxlength="5"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="localidad">Localidad:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="localidad"
+            id="localidad"
+            placeholder="15011"
+            required="required"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldSet">
+        <legend>Tipo de Contratación</legend>
+      </fieldset>
+
+      <fieldset class="fieldSet">
+        <legend>Datos Bancarios</legend>
+      </fieldset>
+      <fieldset class="fieldSet">
+        <legend>Datos Estadísticos - ¿Como nos conoció?</legend>
+      </fieldset>
+
+      <button class="normalBtn" type="submit" name="" value="">Submit</button>
+      <button class="normalBtn" type="reset" name="" value="">Reset</button>
+      <div class="btnBox">
+        <button class="roundBtn">Mostrar Valoración</button>
+        <button class="roundBtn">Mostrar Cuenta</button>
+        <button class="roundBtn">Mostrar Día Semana</button>
+      </div>
+    </form>
   </body>
 </html>
