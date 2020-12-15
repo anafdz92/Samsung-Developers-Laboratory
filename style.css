@@ -49,6 +49,8 @@ fieldset {
 
 .inputContainer {
   margin: 8px;
+  display: flex;
+  justify-content: baseline;
 }
 
 input {
@@ -58,4 +60,36 @@ input {
   margin: 5px;
   padding: 10px;
   border-style: dashed;
+}
+
+.inputsBox {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.select {
+  margin: 15px;
+}
+
+select {
+  margin: 15px;
+}
+
+.cuteBox {
+  display: flex;
+}
+
+.checkBox {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rango {
+  width: 250px;
+}
+
+.fecha {
+  width: 250px;
 }

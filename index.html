@@ -82,15 +82,149 @@
         </div>
       </fieldset>
 
-      <fieldset class="fieldSet">
+      <fieldset class="fieldSet inputsBox">
         <legend>Tipo de Contratación</legend>
+        <div class="cuteBox">
+          <div>
+            <input
+              type="radio"
+              id="contratación"
+              name="contratación"
+              value="contratación"
+              checked
+            />
+            <label for="huey">Nueva Contratación</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Portabilidad"
+              name="Portabilidad"
+              value="Portabilidad"
+            />
+            <label for="huey">Portabilidad</label>
+          </div>
+          <div>
+            <input type="radio" id="Cambio" name="Cambio" value="Cambio" />
+            <label for="huey">Cambio de contrato</label>
+          </div>
+        </div>
+
+        <div class="select">
+          <label for="select">Elija la compañía actual: </label>
+          <select name="select" id="select">
+            <option value="value1" selected>Movistar</option>
+            <option value="value2">Freephone</option>
+            <option value="value3">Hackers Company</option>
+          </select>
+
+          <label for="select"
+            >En caso de portabilidad elija la nueva compañía:
+          </label>
+          <select name="select" id="select">
+            <option value="value1" selected>Movistar</option>
+            <option value="value2">Freephone</option>
+            <option value="value3">Hackers Company</option>
+          </select>
+        </div>
       </fieldset>
 
       <fieldset class="fieldSet">
         <legend>Datos Bancarios</legend>
+
+        <div class="inputContainer">
+          <label for="pais">Pais:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="pais"
+            id="pais"
+            placeholder="ES"
+            required
+          />
+          <p>(solo válido ES)</p>
+        </div>
+
+        <div class="inputContainer">
+          <label for="iban">Control IBAN:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="iban"
+            id="iban"
+            placeholder="XX"
+            required
+          />
+          <p>(dos dígitos)</p>
+        </div>
+
+        <div class="inputContainer">
+          <label for="iban">Entidad:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="entidad"
+            id="entidad"
+            placeholder="XXXX"
+            required
+          />
+          <p>(cuatro dígitos)</p>
+        </div>
+        <div class="inputContainer">
+          <label for="iban">Sucursal:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="entidad"
+            id="entidad"
+            placeholder="XXXX"
+            required
+          />
+          <p>(cuatro dígitos)</p>
+        </div>
+        <div class="inputContainer">
+          <label for="dc">DC:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="dc"
+            id="dc"
+            placeholder="XX"
+            required
+          />
+          <p>(dos dígitos)</p>
+        </div>
+        <div class="inputContainer">
+          <label for="dc">Cuenta:</label>
+          <input
+            className="inputs"
+            type="text"
+            name="dc"
+            id="dc"
+            placeholder="XXXXXXXXXX"
+            required
+          />
+          <p>(diez dígitos)</p>
+        </div>
       </fieldset>
       <fieldset class="fieldSet">
         <legend>Datos Estadísticos - ¿Como nos conoció?</legend>
+        < class="checkBox">
+          <input type="checkbox" name="tv" value="" />A través de la TV
+          <input type="checkbox" name="radio" value="" />A través de la Radio
+          <input type="checkbox" name="internet" value="" />A través de Internet
+          <input
+            type="checkbox"
+            name="otros"
+            value=""
+            min="0"
+            max="5"
+            step="1"
+          />
+          Valoración[1-5]: <input type="range" name="rango" class="rango" />
+       
+        Fecha de la encuesta: <input type="date" name="fecha" class="fecha" />
+        </div>
       </fieldset>
 
       <button class="normalBtn" type="submit" name="" value="">Submit</button>
