@@ -6,7 +6,7 @@ body {
 h1 {
   font-family: "Langar", cursive;
   font-size: 50px;
-  color: #e631a2;
+  color: #cd5c5c;
   margin-top: 45px;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,11 @@ h1 {
 }
 
 legend {
-  background-color: #e631a2;
+  background-color: #cd5c5c;
   border-radius: 5px;
   padding: 8px;
   font-family: "Langar", cursive;
+  color: white;
 }
 
 fieldset {
@@ -38,13 +39,34 @@ fieldset {
   margin-top: 15px;
 }
 .roundBtn {
+  margin: 15px;
   border-radius: 5px;
   border: none;
   padding: 15px;
+  background-color: #cd5c5c;
 }
-
+.roundBtn:hover,
+.roundBtn:focus {
+  background-color: #f0e68c;
+  color: #129471;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .normalBtn {
-  margin-top: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  background-color: #cd5c5c;
+}
+.normalBtn:hover,
+.normalBtn:focus {
+  background-color: #f0e68c;
+  color: #129471;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .inputContainer {
@@ -88,8 +110,19 @@ select {
 
 .rango {
   width: 250px;
+  margin-top: 10px;
 }
 
 .fecha {
   width: 250px;
+}
+
+#select {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background-color: #cd5c5c;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
 }

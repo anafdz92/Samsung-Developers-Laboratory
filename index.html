@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b06a5f3def.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -30,6 +34,7 @@
             name="name"
             id="firstName"
             placeholder="Ana"
+            maxlength="30"
             required
           />
         </div>
@@ -43,6 +48,7 @@
             id="surname"
             placeholder="Baneira"
             required="required"
+            maxlength="60"
           />
         </div>
         <div class="inputContainer">
@@ -54,6 +60,8 @@
             id="direction"
             placeholder="Rua Mariñeira, 3º A , Arou"
             required="required"
+            maxlength="60"
+            
           />
         </div>
 
@@ -140,7 +148,7 @@
             name="pais"
             id="pais"
             placeholder="ES"
-            required
+            readonly
           />
           <p>(solo válido ES)</p>
         </div>
@@ -149,11 +157,13 @@
           <label for="iban">Control IBAN:</label>
           <input
             className="inputs"
-            type="text"
+            type="number"
             name="iban"
             id="iban"
             placeholder="XX"
+            maxlength="2"
             required
+
           />
           <p>(dos dígitos)</p>
         </div>
@@ -162,10 +172,11 @@
           <label for="iban">Entidad:</label>
           <input
             className="inputs"
-            type="text"
+            type="number"
             name="entidad"
             id="entidad"
             placeholder="XXXX"
+            maxlength="4"
             required
           />
           <p>(cuatro dígitos)</p>
@@ -174,10 +185,11 @@
           <label for="iban">Sucursal:</label>
           <input
             className="inputs"
-            type="text"
+            type="number"
             name="entidad"
             id="entidad"
             placeholder="XXXX"
+            maxlength="4"
             required
           />
           <p>(cuatro dígitos)</p>
@@ -186,10 +198,11 @@
           <label for="dc">DC:</label>
           <input
             className="inputs"
-            type="text"
+            type="number"
             name="dc"
             id="dc"
             placeholder="XX"
+            maxlength="2"
             required
           />
           <p>(dos dígitos)</p>
@@ -198,10 +211,11 @@
           <label for="dc">Cuenta:</label>
           <input
             className="inputs"
-            type="text"
+            type="number"
             name="dc"
             id="dc"
             placeholder="XXXXXXXXXX"
+            maxlength="10"
             required
           />
           <p>(diez dígitos)</p>
@@ -209,7 +223,7 @@
       </fieldset>
       <fieldset class="fieldSet">
         <legend>Datos Estadísticos - ¿Como nos conoció?</legend>
-        < class="checkBox">
+        <div class="checkBox">
           <input type="checkbox" name="tv" value="" />A través de la TV
           <input type="checkbox" name="radio" value="" />A través de la Radio
           <input type="checkbox" name="internet" value="" />A través de Internet
@@ -218,22 +232,30 @@
             name="otros"
             value=""
             min="0"
-            max="5"
+            max="4"
             step="1"
           />
+          <div>
+            
+          </div>
           Valoración[1-5]: <input type="range" name="rango" class="rango" />
        
-        Fecha de la encuesta: <input type="date" name="fecha" class="fecha" />
+          Fecha de la encuesta: <input type="date" name="fecha" class="fecha" value="2013-01-08" />
+          <p>Valoración[1-5]:</p>
+        </div>
+       
+         
         </div>
       </fieldset>
 
-      <button class="normalBtn" type="submit" name="" value="">Submit</button>
-      <button class="normalBtn" type="reset" name="" value="">Reset</button>
+      <button class="normalBtn" type="submit" name="" value="">Enviar Datos</button>
+      <button class="normalBtn" type="reset" name="" value="">Borrar Datos</button>
       <div class="btnBox">
         <button class="roundBtn">Mostrar Valoración</button>
         <button class="roundBtn">Mostrar Cuenta</button>
         <button class="roundBtn">Mostrar Día Semana</button>
       </div>
     </form>
+    <script src="./main.js"></script>
   </body>
 </html>
