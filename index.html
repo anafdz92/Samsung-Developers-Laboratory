@@ -210,7 +210,7 @@
         <div class="inputContainer">
           <label for="dc">Cuenta:</label>
           <input
-            className="inputs"
+            class="inputs acount-js"
             type="number"
             name="dc"
             id="dc"
@@ -238,9 +238,9 @@
           <div>
             
           </div>
-          Valoración[1-5]: <input type="range" name="rango" class="rango" />
+          Valoración[1-5]: <input type="range" name="rango" class="rango rango-js" min="1" max="5"/>
        
-          Fecha de la encuesta: <input type="date" name="fecha" class="fecha" value="2013-01-08" />
+          Fecha de la encuesta: <input type="date" name="fecha" class="fecha fecha-js" value="2013-01-08" />
           <p>Valoración[1-5]:</p>
         </div>
        
@@ -251,9 +251,9 @@
       <button class="normalBtn" type="submit" name="" value="">Enviar Datos</button>
       <button class="normalBtn" type="reset" name="" value="">Borrar Datos</button>
       <div class="btnBox">
-        <button class="roundBtn">Mostrar Valoración</button>
-        <button class="roundBtn">Mostrar Cuenta</button>
-        <button class="roundBtn">Mostrar Día Semana</button>
+        <button class="roundBtn valBtn-js">Mostrar Valoración</button>
+        <button class="roundBtn acountBtn-js">Mostrar Cuenta</button>
+        <button class="roundBtn dayBtn-js">Mostrar Día Semana</button>
       </div>
     </form>
     <script src="./main.js"></script>
